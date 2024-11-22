@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <div class="avatar">
+                <img src="imagenes/iconoReg.png" alt="Avatar">
+            </div>
+            <h2>Crea una cuenta en ChefBot</h2>
+            <form>
+                <div class="textbox">
+                    <input type="email" placeholder="E-mail" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="textbox">
+                    <input type="tel" placeholder="Cambiar número"  required pattern="\d{10}" maxlength="10" onkeypress="return isNumberKey(event)">
+                </div>
+                <div class="social-login">
+                    <p>Otras formas de registro</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="imagenes/logoGoogle.png" alt="Google"></a>
+                        <a href="#"><img src="imagenes/logoFace.jpg" alt="Facebook"></a>
+                        <a href="#"><img src="imagenes/logoMicro.jpg" alt="Microsoft"></a>
+                    </div>
+                </div>
+               <button type="submit" class="btn-login">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
