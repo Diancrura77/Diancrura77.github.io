@@ -95,6 +95,7 @@ h2 {
 }
 
 .btn-login {
+    display: inline-block;
     width: 100%;
     background: #dda21a;
     border: none;
@@ -106,6 +107,7 @@ h2 {
     color: #000000;
     transition: 0.3s;
     border-radius: 30px;
+    text-decoration: none;
 }
 
 .btn-login:hover {
