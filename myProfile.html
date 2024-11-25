@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Perfil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <div class="avatar">
+                <img src="imagenes/iconoPerf.png" alt="Registro">
+            </div>
+            <h2>Modificar perfil</h2>
+            <form>
+                <div class="textbox">
+                    <input type="text" placeholder="Nombre de usuario" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Password anterior" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Nuevo password" required>
+                </div>
+                <div class="textbox">
+                    <input type="tel" placeholder="Cambiar número"  required pattern="\d{10}" maxlength="10" onkeypress="return isNumberKey(event)">
+                </div>
+                    
+                <button type="submit" class="btn-login">Guardar Cambios</button>
+            </form>
+
+            <!-- Menú de navegación dentro del contenedor login-box -->
+            <div class="nav-menu">
+                <a href="index.html" class="nav-item">
+                    <img src="imagenes/iconoInicio.png" alt="Inicio">
+                    
+                </a>
+                <a href="menu.html" class="nav-item">
+                    <img src="imagenes/logoMenu.jpg" alt="Menú">
+                    
+                </a>
+                <a href="#" class="nav-item">
+                    <img src="imagenes/iconoPerf.png" alt="Perfil">
+                    
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

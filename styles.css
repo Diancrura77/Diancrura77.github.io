@@ -1,0 +1,315 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #1A3B5D;
+}
+
+/*estilos para registro, inicio de sesión y modificar perfil*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+h2 {
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+
+.login-box {
+    width: 350px;
+    padding: 40px;
+    background: #E77F18;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.avatar {
+    margin-bottom: 20px;
+}
+
+.avatar img {
+    width: 100px;
+    height: 100px;
+    
+}
+
+
+.textbox {
+    position: relative;
+    margin-bottom: 30px;  
+}
+
+.textbox input {
+    width: 100%;
+    padding: 10px;
+    background: #ffffff;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #000000;
+    color: #000000;
+    font-size: 18px;
+}
+
+.textbox input::placeholder {
+    color: #000000;
+}
+
+.social-login {
+    margin: 20px 0;
+    color: #000000;
+    
+}
+
+/* Estilo para quitar el formato de los enlaces y mantener siempre en negro */
+.no-link {
+    text-decoration: none; /* Quita el subrayado */
+    color: #000000; /* Siempre negro */
+    cursor: pointer; /* Mantiene el cursor de enlace */
+}
+
+.no-link:visited {
+    color: #000000; /* Color negro incluso si ya fue visitado */
+}
+
+.no-link:hover {
+    color: #000000; /* Mantiene negro al pasar el cursor */
+    text-decoration: none; /* Sin subrayado */
+}
+
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-login {
+    display: inline-block;
+    width: 100%;
+    background: #dda21a;
+    border: none;
+    padding: 15px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    transition: 0.3s;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.btn-login:hover {
+    background: #1A3B5D
+}
+
+/* Menú de Navegación */
+.nav-menu {
+    display:flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    padding: 15px 0;
+    background-color: #ffffff; 
+    border-radius: 30px;
+    margin-top: 5px; 
+    width: 100%; 
+}
+
+.nav-item {
+    text-align: center; 
+    flex-grow: 1; 
+}
+
+.nav-item img {
+    height: 30px;
+    width: 30px; 
+}
+
+
+/* Adaptación para Pantallas Pequeñas */
+@media only screen and (max-width: 480px) {
+    .login-box {
+        width: 90%; /* Ajuste en pantallas pequeñas */
+        padding: 20px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+
+    .nav-menu {
+        flex-direction: column; /* Menú en columna para pantallas pequeñas */
+        padding: 10px 0; /* Ajuste de padding */
+    }
+
+    .nav-item {
+        margin: 10px 0; /* Espaciado entre ítems en pantallas pequeñas */
+    }
+}
+
+
+/* Responsive */
+@media only screen and (max-width: 480px) {
+    .login-box {
+        width: 90%;
+    }
+
+    .social-icons img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/*Estilos para la pagina de menu*/
+
+
+
+/* Estilos de los botones para la pagina menu */
+.button-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.btn {
+    background-color: #ffb300;
+    color: #000000;
+    padding: 15px 40px;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 250px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #E77F18;
+}
+
+/* Estilos para el botón de imagen */
+.img-btn img {
+    width: 190px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s; /* Efecto de zoom al pasar el mouse */
+}
+
+.img-btn img:hover {
+    transform: scale(1.05); /* Aumenta el tamaño al pasar el cursor */
+}
+
+/* Adaptación para pantallas pequeñas */
+@media only screen and (max-width: 480px) {
+    .btn {
+        font-size: 16px;
+        padding: 12px 30px;
+        width: 200px;
+    }
+
+    .img-btn img {
+        width: 200px; /* Ajusta el tamaño de la imagen para pantallas pequeñas */
+    }
+}
+
+/*estilos para el chat bot de sugerir recetas*/
+
+.chatbot-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    height: 80vh;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #E77F18;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+.chatbot-messages {
+    width: 100%;
+    height: 70%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow-y: auto;
+    padding: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.chatbot-message {
+    background-color: #ffb300;
+    color: #000000;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 80%;
+    scroll-behavior: smooth;
+}
+
+.chatbot-message.user {
+    background-color: #1A3B5D;
+    color: #ffffff;
+    align-self: flex-end;
+}
+
+.chatbot-input {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.chatbot-input input {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.chatbot-input button {
+    width: 20%;
+    padding: 10px;
+    background-color: #ffb300;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    
+}
+
+.chatbot-input button:hover {
+    background-color: #1A3B5D;
+}
+
+input:focus, button:focus {
+    outline: 2px solid #dda21a;
+    outline-offset: 2px;
+}
+
+/*estilos para menu principal*/
+.logo-principal{
+    width: 200px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    margin-top: 5%;
+    padding: auto;
+}
